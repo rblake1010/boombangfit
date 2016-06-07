@@ -1,0 +1,15 @@
+Old one
+FTP Information:
+Host Name: user1235445.sites.myregisteredsite.com
+Username: user1235445
+Password: 6hrky44cnj
+
+New One
+FTP Server:ftp://1814486.sites.myregisteredsite.com
+FTP Username:1814486
+FTP Password:michelleb1
+SQL Server Name:    mssql1.myregisteredsite.com
+
+209.237.150.20
+2273688
+michelleb1

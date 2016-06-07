@@ -1,0 +1,8 @@
+
+- Create an .htaccess file using the following:
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule (.*) http://www.google.com [R=301,L] 
+
+- Replace "http://www.google.com" with the desired URL.

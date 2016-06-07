@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-text-size-adjust: none; -webkit-backface-visibility: hidden;  margin: 0px; padding: 0px}
+
+
+
+body { background-color:#5b5b5b;}
+h1 { color:#444444; text-align:center; font-family: 'Oswald', sans-serif;font-size:39px; }
+h1.bg {  width:978px; height:51px; background-repeat:no-repeat;  margin-top:40px;}
+/*html[data-useragent*='MSIE 10.0'] h1  { color: #fff;}*/
+h1.bg-about {  width:978px; height:51px; background-repeat:no-repeat;  margin-top:40px;}
+h2 { color:#e74c3c; font-family: 'Oswald', sans-serif; font-size:29px; margin:0px 0px 15px 0px;}
+h3 { color:#3e3e3e; font-family: 'Oswald', sans-serif; font-size:25px; text-align:center; margin:25px 0px 25px 0px; padding-bottom:20px; border-bottom:1px solid #e0e0e0;}
+p { color:#444444; font-family: 'Archivo Narrow', sans-serif; font-size:16px; line-height:24px; margin: 0 0 14px;}
+ul { text-align:center;}
+ul li { color:#828282; font-family: 'Archivo Narrow', sans-serif; font-size:18px; padding:6px;}
+a { color: #414141; text-decoration:none; font-weight:bold; font-family: 'Archivo Narrow', sans-serif; sans-serif; margin-top:15px;}
+span.number-about { color:#000; font-weight:bold;}
+span.number-contract { color:#e3d555; font-weight:bold;}
+
+/* header */
+header{ height:200px;  position:relative; background-color:#000;}
+.slideshow { height:348px; overflow:hidden;}
+.logo { /*position:absolute; top: 0; left: 50%; margin-left: -69px; margin-top: 57px; z-index:500;*/ position: absolute; left: 37%; margin-left: 15px; margin-top: 25px; cursor:pointer;}
+.mobileLogo {display: none;}
+.jamthunder { top: 13px; position: absolute; z-index: 500; left: 50%; margin-top: -111px; margin-left:-67px;}
+.logo h1 { margin-left: -188px; position: absolute; left: 50%; top: 0; margin-top: 160px; z-index: 500; display:none; color: #fff;}
+.logo h1 span { font-weight:bold}
+.logo h2 { line-height:22px; color:#fff; font-family: 'Archivo Narrow', sans-serif; text-align: center; font-size:18px; margin-left:-179px; position: absolute; left: 50%; top: 0; margin-top: 211px; z-index: 500; display:none;}
+
+.mobilenav { display:none;}
+.navigation { display:none; }
+nav { width:968px; height:66px; background-color:#e74c3c; position:absolute; z-index:500; bottom:0; left:50%;  margin-left:-482px;}
+nav ul { margin: 0px;}
+nav ul li { display:inline; padding:24px; font-family: 'Oswald', sans-serif; line-height:66px; position: relative;}
+nav ul li img.icon { margin-right:10px;}
+nav ul li a {color:#fff; font-weight:normal; font-size:26px; font-family: 'Archivo Narrow', sans-serif;}
+nav ul li:nth-child(4) a {position: relative;}
+nav ul li:nth-child(4) a:after {content: ''; background: url(../images/whiteTriangle.png);; position: absolute; top: 12px; right: -17px; width: 10px; height: 8px;}
+nav ul li:nth-child(4) a:hover:after {content: ''; background: url(../images/greyTriangle.png);; position: absolute; top: 12px; right: -17px; width: 10px; height: 8px;}
+nav ul li a:hover {  color: #444444;}
+
+nav ul li ul {padding: 0; position: absolute; top: 67px; left: 9px; width: 230px; -webkit-box-shadow: none; -moz-box-shadow: none;
+  box-shadow: none;  display: none;  opacity: 0;  visibility: hidden;  
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;}
+html[data-useragent*='MSIE 10.0'] nav ul li ul   { right: 130px; left: 0px; }
+ nav ul li ul li {background: #e74c3c; line-height: 50px; display: block; color: #fff; text-shadow: 0 -1px 0 #000; padding:0px 0px 0px 30px; text-align: left;} 
+ nav ul li ul li a {font-size: 20px; text-shadow:none; font-family: 'Archivo Narrow', sans-serif;}
+ nav ul li:nth-child(4) ul li a {position: static; background: none;}
+  nav ul li:nth-child(4) ul li a:after { background: none !important;}
+  nav ul li:nth-child(4) ul li a:after:hover {position: static; background: none;}
+ nav ul li ul li a:after { background: none}
+ nav ul li ul li:hover {background: #e8685b;}
+ nav ul li:hover ul {display: block; opacity: 1; visibility: visible;}
+
+/* Welcome to Bang Boom Fit */
+.bangwelcomewrap {background-color:#fff; overflow:hidden; }
+.bangwelcome { width:968px; margin:0 auto; overflow:hidden; position:relative; }
+.bangwelcome-thunder { position:absolute; left:366px;}
+.bangwelcome h1, .welcome p{ color:#444444;}
+.bangwelcome h2 { color:#e74c3c;}
+.bangwelcome img.dj { margin:50px 0px 73px 0px; float:left;}
+.welcome { float:right; width:450px; margin:50px 0px 73px 0px;}
+.christmas { width:430px; height:56px; background-image:url(../images/christmas.png); float:right; margin:-125px 18px 0px 0px; cursor:pointer;}
+.christmas h2 { color:#FFFFFF; font-family: 'Montserrat', sans-serif; font-size:18px; text-transform:uppercase; margin:8px 0px 0px 10px; line-height:20px;}
+.book-wedding { width:430px; height:56px; background-image:url(../images/book-wedding.png); float:right; margin:-125px 18px 0px 0px; cursor:pointer;}
+.book-wedding h2 { color:#676664; font-family: 'Montserrat', sans-serif; font-size:18px; text-transform:uppercase; margin:8px 0px 0px 10px; line-height:20px;}
+span.bigger { font-weight:bold; font-family: 'Montserrat', sans-serif; font-size:22px; margin-left:30px;}
+.yourcoach {float: left; margin: -53px 0px 0px 11px}
+
+
+/* My Journey */
+.myjourneywrap {background-color:#f5f5f5; -moz-box-shadow: inset 0 5px 6px -6px #333; -webkit-box-shadow: inset 0 5px 6px -6px #333; box-shadow: inset 0 5px 6px -6px #333; overflow:hidden; }
+.myjourney { width:968px; margin:0 auto; overflow:hidden; position:relative; }
+.myjourney-image { margin:50px 0px 21px 0px; float:left; width:458px; height:289px; cursor:pointer;}
+.myjourney-story { float:left; margin:50px 0px 30px 60px; width:450px; position:relative;}
+.facebook { position:absolute; top:0px; right:45px;}
+.groupon { position:absolute; top:0px; right:15px;}
+.small-photos { float:left; width:458px; height:197px; margin: -175px 0px 22px 0px;}
+.leftpic { float:left; margin:0px 0px 20px 0px; cursor:pointer;}
+.rightpic { float:right; cursor:pointer;}
+iframe.test { position:absolute; left:310px; top:6px;}
+.testimonials{ float:right; margin:-125px 0px 5px 60px; width:450px; position:relative;}
+.blurb { width:350px; height:150px;}
+.blurb p { color:#292929; font-size:17px;}
+span.yellow { color:#e4d74a;}
+.sonet h2 {text-align: center;}
+.sonet p { font-size: 14px; color: #000; text-align: center;}
+.sonet span.boldTitle {color: #000; font-weight: bold;}
+
+/* Join pop Team */
+.ourteamwrap {background-color:#fff;  -moz-box-shadow: inset 0 5px 6px -6px #333; -webkit-box-shadow: inset 0 5px 6px -6px #333; box-shadow: inset 0 5px 6px -6px #333; overflow:hidden; }
+.ourteam {width: 968px; margin: 0 auto; overflow: hidden; position: relative;  }
+.ourteam img.dj { margin:50px 0px 73px 0px; float:left;}
+.beachbody {float: left; margin: -80px 0px 0px 90px;}
+
+/* Programs*/
+.programswrap {background-color:#f5f5f5; -moz-box-shadow: inset 0 5px 6px -6px #333; -webkit-box-shadow: inset 0 5px 6px -6px #333; box-shadow: inset 0 5px 6px -6px #333;  overflow:hidden; }
+.programs{ width:968px; margin:0 auto; overflow:hidden; position:relative;}
+.packageinfo { margin:-1px auto; text-align:center; width:989px; }
+.packageinfo p { color: #e74c3c;}
+.deals { overflow:hidden; width:295px; height:281px; float:left; border-radius:10px; background-color:#FFFFFF; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; position:relative;}
+.packageA {   margin:20px 0px 25px 0px;  }
+.packageB {  background-color:#414141;  margin:20px 0px 25px 41px; }
+.packageB ul li { color:#dfdfdf}
+.packageB h3 { color:#FFF; border-bottom:1px solid #393939;}
+.packageC { margin:20px 0px 25px 41px;}
+.active { background-color:#e3d555; color:#333;}
+.active h3 { color:#3e3e3e;}
+.active .slide {visibility:hidden;}
+.active ul li { color:#3e3e3e; }
+.workout {-moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; -ms-border-radius:10px !important; border-radius:10px;}
+.bottomRow {margin:20px 0px 73px 0px; }
+
+.popup {width: 800px;  background: #fff; padding: 15px; overflow: hidden;}
+.popup h2 {color:#000;}
+.popup p.bold { color: #000; font-size: 20px; line-height: 25px;}
+.popup p.price { color: #e74c3c; font-size: 25px; margin: 0px; padding: 0px; font-weight: bold;}
+.popup ul { margin:0px 0px 10px 25px;}
+.popup ul li {padding: 0px; line-height: 30px; text-align: left; color:#444444; font-family: 'Archivo Narrow', sans-serif; font-size:16px; list-style-type: circle}
+.popup button {border:none; width:270px; height:50px; background-color:#414141; font-family: 'Archivo Narrow', sans-serif;  line-height:50px; font-size:25px; cursor: pointer; color:#FFF; opacity:1; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; margin:10px auto; cursor:pointer;}
+.popup button:hover { -webkit-box-shadow: 0 8px 6px -6px black; -moz-box-shadow: 0 8px 6px -6px black; box-shadow: 0 8px 6px -6px black;}
+.popup button a {color: #fff;}
+p.bold { color: #000; font-size: 20px; line-height: 25px;}
+span.boldTitle {color: #000;}
+iframe.videoWorkout { float: right; display: block; margin-right: 15px;}
+
+.popup {display: none;}
+/* Gear */
+.gearwrap {background-color:#f5f5f5; -moz-box-shadow: inset 0 5px 6px -6px #333; -webkit-box-shadow: inset 0 5px 6px -6px #333; box-shadow: inset 0 5px 6px -6px #333;  overflow:hidden; }
+.gear { width:968px; margin:0 auto; overflow:hidden; position:relative;}
+
+
+/* Products Animation */
+.slide { height:281px; z-index:200; float:left; width:295px; position:absolute; top:-281px; background-image:url(../images/orange_bg.png); border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px;   }
+.slide h3 {  border:none; width:270px; height:50px; background-color:#414141; font-family: 'Archivo Narrow', sans-serif;  line-height:50px; font-size:15px; color:#FFF; opacity:1; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; margin:10px auto; cursor:pointer;}
+.slide h3.buy a {color: #fff; font-size: 20px;}
+.slide h3:first-child {margin-top: 50px;}
+.slide h3.two:first-child {margin-top: 90px;}
+.slide h3.one:first-child {margin-top: 115px;}
+.slide h3:hover {  	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;}
+.slide h3.buy a:hover {color:#fff;}
+.slide h3.one a {color:#fff;}
+
+/* Supplements */
+.supplementswrap {background-color:#fff; -moz-box-shadow: inset 0 5px 6px -6px #333; -webkit-box-shadow: inset 0 5px 6px -6px #333; box-shadow: inset 0 5px 6px -6px #333;  overflow:hidden; }
+.supplements{ width:968px; margin:0 auto; overflow:hidden; position:relative;}
+
+/* Challenge Packs */
+.challengewrap {background-color:#fff; -moz-box-shadow: inset 0 5px 6px -6px #333; -webkit-box-shadow: inset 0 5px 6px -6px #333; box-shadow: inset 0 5px 6px -6px #333;  overflow:hidden; }
+.challenge{ width:968px; margin:0 auto; overflow:hidden; position:relative;}
+
+
+/* Shakelogy */
+.shakewrap {background-color:#f5f5f5; overflow:hidden; -moz-box-shadow: inset 0 5px 6px -6px #333; -webkit-box-shadow: inset 0 5px 6px -6px #333; box-shadow: inset 0 5px 6px -6px #333; }
+.shake { width:968px; margin:0 auto; overflow:hidden; position:relative; }
+.shake h1, .shake p{ color:#444444;}
+.shake h2 { color:#e74c3c;}
+.shake img.dj { margin:50px 0px 73px 0px; float:left;}
+.welcome { float:right; width:450px; margin:50px 0px 73px 0px;}
+ ul li {padding: 0px; line-height: 30px; text-align: left; color:#444444; font-family: 'Archivo Narrow', sans-serif; font-size:16px; list-style-type: circle}
+ ul { margin:-7px 0px 10px 25px;}
+ .buyNow {float: right; z-index: 500; position: relative; top: -23px; left: -16px; cursor: pointer;}
+
+span.bigger { font-weight:bold; font-family: 'Montserrat', sans-serif; font-size:22px; margin-left:30px;}
+
+
+
+/* contact */
+.contactwrap {background-color:#fff; -moz-box-shadow: inset 0 5px 6px -6px #333; -webkit-box-shadow: inset 0 5px 6px -6px #333; box-shadow: inset 0 5px 6px -6px #333;  overflow:hidden; }
+.contact{ width:968px; margin:0 auto; overflow:hidden; position:relative; }
+.contact-thunder { position:absolute; left:350px;}
+.contract { float:left; width:459px; margin:50px 0px 73px 0px;}
+.form { float:left; margin:35px 0px 73px 60px; -webkit-appearance: none; }
+.form-item {position:relative; margin-bottom:20px;}
+.yourcoachContact {float: left; margin: -3px 0px 0px 1px;}
+
+input { width:445px; height:58px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; -ms-border-raduis:10px; border:none; background-color:#444444; padding:18px; margin:20px 0px 0px 0px; font-size:16px; color:#FFFFFF; font-family: 'Archivo Narrow', sans-serif; -webkit-appearance: none; border-top-left-radius:10px; border-top-right-radius:10px;
+border-bottom-left-radius:10px; border-bottom-right-radius:10px; }
+input:focus, textarea:focus {outline: 0; -webkit-appearance: none;}
+textarea { width:445px; height:200px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; border:none; background-color:#414141; padding:18px; margin:20px 0px 0px 0px; color:#FFFFFF; font-family: 'Archivo Narrow', sans-serif; font-size:16px; }
+select { width:445px; height:58px;  background-color:#414141; border:1px solid #414141; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; padding:18px; margin:20px 0px 0px 0px; font-size:16px;   font-family: 'Archivo Narrow', sans-serif; color:#fff; /*-webkit-appearance: none; */}
+select.activeChoose { background-color:#e74c3c; color:#fff;}
+select.chosen {background-color:#e3d555; color:#fff;}
+.packages option { color:#fff; -webkit-appearance: none; }
+input.submit { width:200px; height:50px; float:right; color:#fff; font-family: 'Archivo Narrow', sans-serif; cursor:pointer; }
+input.submit:hover { /*background-color: #e4d74a; color:#414141;*/}
+span.errors { position: absolute; right: 15px; top:36px; background-color:#e74c3c; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; padding:5px; color:#fff; font-family: 'Archivo Narrow', sans-serif; font-style:italic; font-size:13px;}
+span.errors1 { position: absolute; right: 15px; top:186px; background-color:#e74c3c; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; padding:5px; color:#fff; font-family: 'Archivo Narrow', sans-serif; font-style:italic; font-size:13px;}
+input:-webkit-autofill { background-color: #e74c3c !important; color: #fff; }
+::-webkit-input-placeholder { font-size:16px;  font-family: 'Archivo Narrow', sans-serif; color:#FFF }
+:-moz-placeholder { /* Firefox 18- */   font-family: 'Archivo Narrow', sans-serif;font-family: 'Archivo Narrow', sans-serif; font-size:16px; color:#FFF}
+::-moz-placeholder {  /* Firefox 19+ */   font-family: 'Archivo Narrow', sans-serif; font-size:16px; color:#FFF }
+:-ms-input-placeholder {  font-family: 'Archivo Narrow', sans-serif;  font-size:16px; color:#FFF }
+
+
+/* thanks */
+.thankswrap {background-color:#e74c3c; -moz-box-shadow: inset 0 5px 6px -6px #333; -webkit-box-shadow: inset 0 5px 6px -6px #333; box-shadow: inset 0 5px 6px -6px #333;  border-top: 1px solid #000; overflow:hidden; display:none;}
+.thanks {width: 968px; margin: 0 auto; overflow: hidden; position: relative;  }
+.thanks img.dj { margin:50px 0px 73px 0px; float:left;}
+.thanks-thunder { position:absolute; left:314px;}
+.thanksinfo { margin:30px 0px 15px 0px; text-align:center; }
+.thanks h1.bg {margin-top: 10px; color: #000;}
+.thanks p {color:#000;}
+.thanks .packageinfo {margin: 0px;}
+
+
+
+/* footer */
+.footerwrap {background-color:#000; height:60px; overflow:hidden; }
+.footer {width: 968px; height:60px; margin: 0 auto; overflow: hidden; position: relative;  }
+.footerinfo { margin:18px 0px 10px 0px; text-align:center; }
+.footerinfo p { font-size:13px; line-height:4px; color: #fff;}
+.footerinfo p a { color: #e74c3c;}
+
+
+
+
+
+.scrollup{ width:40px; height:40px; opacity:0.8;position:fixed; bottom:50px;right:75px;display:none;text-indent:-9999px; background: url(../images/icon_top3.png) no-repeat;}
+.scrollup:hover {opacity: 1;}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+
+p{ font-size:13px;}	
+h2{ margin:0px 0px 10px 0px; line-height: 36px;}
+.beachbody {display: none;} 	
+header { height:150px; position:relative; z-index:500;}	
+nav, .slideshow { display:none;}
+.navigationwrap { height:0px; transition:height 0.5s; -webkit-transition:height 0.5s; background-color:#FF0000; overflow:hidden; position:relative; }	
+.navigationwrap.activeNav { height:513px; }
+.navigation {  z-index:100; display:block;  }
+.navigation ul {margin: 0px;}
+.navigation ul li { background-color:#000; padding:13px 0px 13px 13px; border-bottom:1px solid #222; font-size:15px; }
+.navigation ul li:focus { }
+.navigation ul li a { padding:10px 0px 10px 0px; color:#fff; font-weight:lighter;}
+.navigation ul li a:hover { color:#fff}
+.navigation ul li:hover { background-color:#e74c3c; color: #fff;}
+.mobilenav { display:block; position:absolute; right:6px; top:6px; cursor:pointer;}
+.myjourney-image {width: 300px; height: 225px; float: none;}
+.logo {width: 300px; height: 69px; left: -12px; top: 31px;}
+.logo img {width: 300px; height: 69px;}
+.normalLogo {display: none;}
+.mobileLogo {display: block;}
+.logo h1 { margin-left: -105px; position: absolute; left: 50%; top:0; margin-top: 105px; z-index: 500; display:none; font-size:28px;}
+.logo h2 {color: #ababab; font-size: 16px; margin-left: -85px; position: absolute; left: 50%; top: 0; margin-top: 139px; z-index: 500; display: none; }
+.jamthunder { width:74px; height:74px; margin-left:-33px;}
+.myjourney-story { float: left; margin: 17px 0px 30px 16px; width: 300px; position: relative;}
+.about { width:100%; padding-left:5px; padding-right:5px;}
+h1 { font-size:25px; display:block; float:left; margin-bottom:15px;}
+h1.bg-about { background-image:none; width:316px; height:35px; display:block; margin:15px auto 0px auto;}
+.about-thunder { position:absolute; left:83px; top:15px; height:31px; width:19px;}
+.bangwelcome img.dj, .myjourney img.dj, .ourteam img.dj, .shake img.dj { width:300px; height:225px; margin:55px 0px 0px 12px; display:block; float:none;}
+.welcome { float:left; width:300px; margin:20px 0px 30px 16px; padding:5px;}
+.christmas { width:300px; height:40px; margin:-20px 0px 30px 3px; background-image:
+url(../images/christmas-iphone.png); float:left;}
+.christmas h2 { font-size:13px; margin:3px 0px 0px 10px; line-height:16px;}
+.book-wedding { width:300px; height:40px; margin:-20px 0px 30px 3px; background-image:url(../images/book-wedding-iphone.png); float:left;}
+.book-wedding h2 { font-size:13px; margin:3px 0px 0px 10px; line-height:16px;}
+span.bigger { font-size:15px; margin-left:30px; }
+.buyNow { top: 10px; left: 7px;}
+.yourcoachContact {display: none;}
+.yourcoach {display: none;}
+.bodychallenge {display: none;}
+.media { width:100%;  padding-left:5px; padding-right:5px;}
+h1.bg{ background-image:none; width:316px; height:35px; display:block; margin:15px auto 0px auto;} 
+.media-thunder { position:absolute; left:77px; top:15px; height:31px; width:19px;}
+.party-begin { width:100%; margin:50px 0px 50px 0px;}
+.small-photos { display:none;}
+.tucanos-clip { width:300px; height:225px; display:block; float:none; margin: 50px 0px -8px 0px; }
+.tucanos-clip img { width:300px; height:225px; margin:0px 0px 0px 5px;}
+iframe.test { position:absolute; left:0px; top:35px; }
+.party-begin p { margin-top:30px;}
+.testimonials { display:none;}
+.blurb { width:100%; height:250px;}
+
+.wedding { width:100%;  padding-left:5px; padding-right:5px;}
+.wedding img.dj { width:300px; height:225px; margin:55px 0px 0px 5px; display:block; float:none;}
+.wedding-thunder { position:absolute; left:40px; top:15px; height:31px; width:19px;}
+
+.package { width:100%; padding-left:5px; padding-right:5px; -webkit-backface-visibility: hidden}
+.package-thunder { position:absolute; left:51px; top:15px; height:31px; width:19px;}
+.packageinfo { width:315px; margin:0px 0px 45px 0px; text-align:center; display: block;}
+.packageinfo p {font-size: 15px;}
+.popup {width: 229px;}
+.popup ul { margin: 0px 0px 10px 14px;}
+.popup ul li {font-size: 13px;}
+.popup button {width: 187px;}
+.videoWorkout {display: none !important;}
+
+
+.packageA { margin:-34px 0px 13px 14px; float: none;}
+.packageB { margin:20px 0px 13px 14px; float: none;}
+.packageC { margin:20px 0px 53px 14px; float: none;}
+
+
+.contact { width:100%; padding-left:5px; padding-right:5px;}
+.contact-thunder { position:absolute; left:61px; top:15px; height:31px; width:19px;}
+.contract { width:100%; margin:13px 0px 73px 15px;}
+.contract p {width: 288px;}
+.form { margin:-80px 0px 73px 10px;}
+input, select, textarea { width:300px;}
+select { -webkit-appearance: none; }
+span.errors { position: absolute; right: 15px; top:36px; background-color:#e4d74a; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; padding:5px; color:#414141; font-family: 'Montserrat', sans-serif; font-style:italic; font-size:10px;}
+span.errors1 { position: absolute; right: 15px; top:186px; background-color:#e4d74a; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; padding:5px; color:#414141; font-family: 'Montserrat', sans-serif; font-style:italic; font-size:10px;}
+ul {margin: -7px 0px 10px 17px;}
+ul li {font-size: 14px;}
+.thanks { width:100%;  padding-left:5px; padding-right:5px;}
+.thanks-thunder { height:31px; width:19px; left:34px;}
+
+.scrollup { right:0;}
+
+.footer {width:100%;  padding-left:5px; padding-right:5px;}
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px) and (orientation : landscape) {
+	h1 { font-size:35px; display:block; float:left; margin-bottom:15px; margin-left:50px;}
+	
+	h2 {font-size:22px;}
+	.about img.dj { float:left; margin:15px 0px 0px 5px;}
+	.about-thunder { left:224px;}
+	.media-thunder { left:220px;}
+	.wedding-thunder { left:186px;}
+	.package-thunder { left:192px}
+	.contact-thunder { left:204px;}
+	.contract { width:500px; text-align:center; margin:17px 0px 15px 30px;}
+	.contract p a { text-align:left;}
+	h1.bg-about { margin-left:147px; font-size: 24px;}
+	.welcome, .myjourney-story  { float:left; width:400px; margin:5px 0px 30px 95px; text-align: center;}
+	.tucanos-clip { float:left; margin:15px 0px 0px 5px;}
+	.wedding img.dj { float:left; margin:15px 0px 0px 5px;}
+	.packageinfo { width:500px; margin:0 auto 0px 30px; display:block; text-align:center;}
+	.packageA { margin:20px 0px 13px 150px;}
+	.packageB { margin:20px 0px 13px 150px;}
+	.packageC { margin:20px 0px 53px 150px;}
+	.form {margin:0px auto 73px 129px;}
+	.testimonials { display:none;}
+	iframe.test { top:30px;}
+	.christmas { margin-top:-185px;}
+	.book-wedding { margin-top:-185px;}
+  .logo {left: 97px; }
+	h1.bg { margin-left:147px; font-size: 24px; }
+  .bangwelcome {width: 100%;}
+  .bangwelcome img.dj, .myjourney img.dj, .ourteam img.dj, .shake img.dj {  margin: 55px 0px 0px 146px;}
+  .contract {margin: 17px 0px 15px 108px; width: 400px;}
+  .contract p {width: auto;}
+  .contract ul {margin: -7px 0px 10px 142px;}
+  .buyNow {top:-6px; left: -16px;}
+	
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px)  {
+
+	h2 {line-height: 35px;}
+	body { -webkit-backface-visibility: hidden;}
+	h1.bg { background-image:none;}
+	nav { width:100%; margin-left:0px; left:0px}
+	nav ul li { padding:18px;}
+  nav ul li a {font-size: 20px;}
+	nav ul li img { display:none;}
+  nav ul li:nth-child(4) a:hover:after { top: 7px;}
+  nav ul li:nth-child(4) a:after {top: 7px;}
+  nav ul li ul {top: 58px;}
+  .logo {left: 24%; }
+  .beachbody {margin: 8px 0px 0px 20px;}
+  .myjourney-story { float: right; width: 350px; margin: 50px 204px 73px 0px;  }
+  .myjourney-image { width: 381px; height: 285px;}
+  img.yourcoach {width: 381px; height: 71px; margin: 10px 0px 0px 8px;}
+  img.yourcoachContact {width: 315px; height: 59px;}
+  img.workout {width: 229px; height: 231px;}
+  .packageA {margin: 20px 0px 25px 10px;}
+	h1.bg-about { background-image:none; width:818px;}
+	h1.bg { width:818px;}
+	.bangwelcome img.dj,   .myjourney img.dj, .ourteam img.dj, .shake img.dj { width:381px; height:285px; margin:50px 0px 0px 8px;}
+	.about-thunder { left:319px;}
+  .slide h3.one:first-child {margin-top: 95px;}
+  .slide h3.two:first-child {margin-top: 75px;}
+  .slide h3.buy {font-size: 18px;}
+	.welcome { float: right; width: 350px; margin: 50px 204px 73px 0px;}
+	.about, .media, .wedding, .package, .contact, .thanks, .footer { padding:5px;} 
+	.packages { -webkit-backface-visibility: hidden;}
+	.packageB { margin:20px 0px 73px 42px}
+	.packageinfo { width: 729px; margin-left: 45px;}
+	.deals, .slide { width:229px; height:231px;}
+	ul li { font-size:14px;}
+	.slide h3 { width: 229px; height: 40px; line-height: 40px;}
+	.christmas { height:51px; width:381px; float:left; background-image:url(../images/christmas-ipad.png); margin-top:-110px;}
+	.christmas h2 { color:#FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px; text-transform:uppercase; margin:6px 0px 0px 10px; line-height:20px;}
+	.book-wedding { height:51px; width:381px; float:left; background-image:url(../images/book-wedding-ipad.png); margin-top:-110px;}
+	.book-wedding h2 { color:#676664 font-family: 'Montserrat', sans-serif; font-size:16px; text-transform:uppercase; margin:6px 0px 0px 10px; line-height:20px;}
+	span.bigger { font-size:18px; margin-left:30px; }
+  .popup {width: 600px;}
+	
+	.tucanos-clip, .tucanos-clip img { width:381px; height:240px;}
+	iframe.test { left: 0px; top: 33px;}
+	.party-begin p { margin-top:25px}
+  .small-photos {margin: -186px 0px 0px 9px;}
+	.small-photos img { width:169px; height:106px;}
+  .small-photos img.bodychallenge { width: 381px; height: 127px;}
+	.rightpic { float:left; margin-left:43px;}
+	input, select, textarea { width:395px;}
+	.media-thunder { left:329px;}
+	.wedding-thunder { left:286px;}
+	.package-thunder { left:293px}
+	.contact-thunder { left:307px;}
+	.thanks-thunder { left:270px;}
+  .bodychallenge {display: none;}
+	
+	.party-begin { margin:50px 0px 30px 23px; width: 350px;}
+	.testimonials { margin: -6px 0px 30px -55px;}
+
+	
+	.wedding img.dj { width:381px; height:285px;}
+	.contract { width:315px;}
+	
+	.blurb { height:150px;}
+	.packageC { margin:20px 0px 73px 34px;}
+	.packageB { margin:20px 0px 73px 35px;}
+	.form { margin:35px 0px 73px 45px;}
+	input.submit { -webkit-backface-visibility: hidden;}
+	.scrollup { right:0px;}
+	.footer {width:100%; }
+	
+}

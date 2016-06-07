@@ -1,0 +1,273 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Profile</title>
+<link href="css/styles.css" type="text/css" rel="stylesheet" />
+<link href="css/stylesheet.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<script src="js/custom.js"></script>
+<script src="js/jquery.knob.min.js"></script>
+</head>
+
+<body>
+<form>
+<div class="myProfile_stage2">
+<div class="headerWrap">
+<div class="header">
+<img src="images/aafmaaLogo.png" width="253" height="74" class="aafmaaLogo" />
+<div class="border"></div><!-- end border -->
+<img src="images/memberCenter.png" width="261" height="23" class="memberCenter" />
+
+<div class="userInfo">
+<span class="info">Gen. John Snow - <b>123453533</b> <a href="#">Log Out</a></span><!-- end info -->
+<span class="concerns"><a class="question" href="#">Question</a> | <a class="faq" href="#">FAQ</a></span><!-- end concerns -->
+</div><!-- end userInfo -->
+
+</div><!-- end headerWrap -->
+</div><!-- end header -->
+
+<div class="navWrap">
+<div class="nav">
+<ul>
+<li><a href="#">My Profile</a></li>
+<li><a href="#">My Services &amp; Products</a></li>
+<li><a href="#">Payment Center</a></li>
+<li><a href="#">My Documents</a>
+</li>
+</ul>
+</div><!-- end nav -->
+</div><!-- end navWrap -->
+
+
+<div class="leaderboardWrap">
+<div class="leaderboard">
+
+ <div class="accountMeter">
+ <span class="icon">      
+<input class="knob" data-fgColor="#3b9bc7" data-thickness=".3" data-bgColor="#f7f7f7" data-displayInput="false" data-width="86" data-height="86" readonly value="15">
+</span>
+<span class="active"></span>
+</div><!-- end accountMeter -->
+
+
+ <div class="personalMeter">
+ <span class="icon">      
+<input class="knob" data-fgColor="#3b9bc7" data-thickness=".3" data-bgColor="#f7f7f7" data-displayInput="false" data-width="86" data-height="86" readonly value="15">
+</span>
+<span></span>
+</div><!-- end personalMeter -->
+
+<div class="otherMeter">
+ <span class="icon">      
+<input class="knob" data-fgColor="#3b9bc7" data-thickness=".3" data-bgColor="#f7f7f7" data-displayInput="false" data-width="86" data-height="86" readonly value="100">
+</span>
+<span></span>
+</div><!-- end otherMeter -->
+
+<div class="benefitMeter">
+ <span class="icon">      
+<input class="knob" data-fgColor="#3b9bc7" data-thickness=".3" data-bgColor="#f7f7f7" data-displayInput="false" data-width="86" data-height="86" readonly value="25">
+</span>
+<span></span>
+</div><!-- end benefitMeter -->
+
+<div class="financialMeter">
+ <span class="icon">      
+<input class="knob" data-fgColor="#3b9bc7" data-thickness=".3" data-bgColor="#f7f7f7" data-displayInput="false" data-width="86" data-height="86" readonly value="0">
+</span>
+<span></span>
+</div><!-- end financialMeter-->
+
+
+	
+
+<div style="clear:both"></div>
+
+</div><!-- end leaderboard -->
+</div><!-- end leaderboardWrap -->
+
+
+<div class="progressResponseWrap">
+<div class="progressResponse">
+<h2>Personal Information</h2>
+
+<span>
+<div id="progressbar"></div><!-- end progressbar -->
+<div id="progressMessage"></div><!-- end progressMessage -->
+</span>
+</div><!-- end progressResponseWrap -->
+</div><!-- end progressResponse -->
+
+<div class="mainWrap">
+
+<div class="main">
+
+<div class="pInformation identification">
+	<span><img src="images/IdentificationImage.png" width="72" height="72" /></span>
+	<ul>
+	<h2>Identification</h2>
+	<li><strong>Name:</strong> John Snow</li>
+	<li><strong>Customer Number:</strong>  123456</li>
+	<li><strong>Customer Type:</strong>  Employee</li>
+	<li><strong>Date of Birth:</strong>  May 25, 1970</li>
+	
+</ul>
+</div><!-- end pInformation -->
+
+<div class="pInformation military">
+	<a class="edit" href="#">Edit</a>
+	<span><img src="images/militaryImage.png" width="72" height="72" /></span>
+	<ul>
+	<h2>Military Information</h2>
+	<li><strong>Military Branch:</strong> Army</li>
+	<li><strong>Military Rank - Grade:</strong> Brigadier General - 07</li>
+	<li><strong>Military Status:</strong> Retired</li>
+	<li><strong>Retirement Date:</strong> Oct 2015</li>
+	
+</ul>
+</div><!-- end pInformation -->
+
+<div class="pInformation mailing">
+
+<a class="addNew" href="#">+Add New</a>
+	<span><img src="images/mailingImage.png" width="72" height="72" /></span>
+	<ul>
+	<h2>Mailing Address</h2>
+	<li><strong>Primary Address:</strong></li>
+	<li>(Home)</li>
+	<li>12345 ABC Street Unit# 123 <a href="#" class="edit">Edit</a></li>
+	<li>Reston, VA 22000</li> 
+	<li class="other"><strong>Secondary Address:</strong></li>
+	<li>(Work)</li>
+	<li>12345 ABC Street Unit# 123 <a href="#" class="edit">Edit</a></li>
+	<li>Reston, VA 22000</li>
+	
+</ul>
+</div><!-- end pInformation -->
+
+<div class="pInformation contact">
+<a class="addNew">+Add New</a>
+	<span><img src="images/phoneImage.png" width="72" height="72" /></span>
+	<ul>
+	<h2>Phone and Email</h2>
+	<li><strong>Phone Number:</strong></li>
+	<li>123-456-7890 | Mobile <a href="#" class="fancybox edit " title="Lorem ipsum dolor sit amet"  href="#inline1">Edit</a></li>
+	<li>(Preferred)</li>
+	
+	<li class="other"><strong>Email:</strong></li>
+	<li>johnsnow@aafmaa.com <a href="#" class="edit">Edit</a></li>
+	<li>(Preferred)</li>
+	
+</ul>
+<div id="inline1" style="width:400px;display: none;">
+		<h3>Etiam quis mi eu elit</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien. Vestibulum imperdiet porta ante ac ornare. Nulla et lorem eu nibh adipiscing ultricies nec at lacus. Cras laoreet ultricies sem, at blandit mi eleifend aliquam. Nunc enim ipsum, vehicula non pretium varius, cursus ac tortor. Vivamus fringilla congue laoreet. Quisque ultrices sodales orci, quis rhoncus justo auctor in. Phasellus dui eros, bibendum eu feugiat ornare, faucibus eu mi. Nunc aliquet tempus sem, id aliquam diam varius ac. Maecenas nisl nunc, molestie vitae eleifend vel, iaculis sed magna. Aenean tempus lacus vitae orci posuere porttitor eget non felis. Donec lectus elit, aliquam nec eleifend sit amet, vestibulum sed nunc.
+		</p>
+	</div>
+
+</div>
+
+
+<div class="pInformation family">
+
+<a class="addNew" href="#">+Add New</a>
+	<span><img src="images/familyImage.png" width="72" height="72" /></span>
+		<h2>Family Members (3)</h2>
+	<ul class="first">
+	<li><strong>Jane Snow</strong> <a href="#" class="edit">Edit</a></li>
+	<li>Relation: Spouse</li>
+	<li>Customer Number: 123456</li>
+	<li>SSN: Not on file</li>
+	<li>Customer Number: 123456</li>
+	<li>Date of Birth: Oct 12, 1973</li>
+</ul>
+
+<ul>
+	
+	<li><strong>Jane Snow</strong><a href="#" class="edit">Edit</a></li>
+	<li>Relation: Spouse</li>
+	<li>Customer Number: 123456</li>
+	<li>SSN: Not on file</li>
+	<li>Customer Number: 123456</li>
+	<li>Date of Birth: Oct 12, 1973</li>
+</ul>
+
+
+<ul>
+	
+	<li><strong>Jane Snow</strong><a href="#" class="edit">Edit</a></li>
+	<li>Relation: Spouse</li>
+	<li>Customer Number: 123456</li>
+	<li>SSN: Not on file</li>
+	<li>Customer Number: 123456</li>
+	<li>Date of Birth: Oct 12, 1973</li>
+</ul>
+
+
+</div>
+
+
+
+
+</div><!-- end main -->
+</div><!-- end mainWrap -->
+
+
+<div class="appLeaderboardWrap">
+<div class="appLeaderboard">
+<img src="images/appLogo.png" width="226" height="58" class="appLogo" />
+<div style="clear:both"></div>
+<a href="#">download</a>
+</div>
+</div>
+
+<div class="footerWrap">
+<div class="footer">
+
+<img src="images/footerLogo.png" width="206" height="60" class="footerLogo" />
+
+<ul class="menu">
+	<li><a href="#">Member Center</a></li>
+	<li><a href="#">AAFMAA Home</a></li>
+	<li><a href="#">Pay Now</a></li>
+	<li><a href="#">FAQ</a></li>
+</ul><!-- end menu -->
+
+<ul class="social">
+	<li class="blog"><a href="#">AAFMAA Blog</a></li>
+	<li class="facebook"><a href="#">Facebook</a></li>
+	<li class="rss"><a href="#">RSS</a></li>
+</ul> <!-- end social -->
+
+<ul class="social">
+	<li class="spouseLink"><a href="#">SpouseLink.org</a></li>
+	<li class="twitter"><a href="#">Twitter</a></li>
+	<li class="googlePlus"><a href="#">Google+</a></li>
+</ul><!-- end social -->
+
+<img src="images/geoTrust.png" width="123" height="37" class="geoTrust" />
+
+<div style="clear:both"></div>
+
+<div class="copyright">
+<p>2014 American Armed Forces Mutual Aid Association <br />
+102 Sheridan Avenue, Ft. Myer, VA 22211-1110
+</p>
+</div><!-- end copyright -->
+
+</div><!-- end footer -->
+</div><!-- end footerWrap -->
+</div><!-- end myProfile2 -->
+</form><!-- end form -->
+</body>
+</html>
